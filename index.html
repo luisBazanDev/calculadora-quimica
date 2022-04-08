@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Configuracion electronica</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Calculadora de la configuracion electronica de elementos quimicos">
+  <meta name="author", content="Luis Bazán">
+  <meta name="keywords" content="quimica, configuracion electronica, calculadora">
+  <meta name="copyright" content="Luis Bazán">
+</head>
+<body>
+  <h1>Configuracion electronica</h1>
+
+  <div class="input">
+    <span>Numero Atomico</span>
+    <input type="number" id="numero-atomico" placeholder="Numero a buscar">
+    <button onclick="calculateWithNumber()">Calcular con numero</button>
+    <span>Simbolo quimico</span>
+    <input type="text" id="simbolo-quimico" placeholder="Simbolo a buscar">
+    <button onclick="calculateWithSimbol()">Calcular con simbolo</button>
+  </div>
+
+  <div id="response">
+    <div class="item" id="serrucho-container">
+      <span>Regla del serrucho</span>
+      <p class="value" id="regla-serrucho">--</p>
+    </div>
+    <div class="item">
+      <span>Numero Cuantico principal</span>
+      <p class="value" id="nc-principal">--</p>
+    </div>
+    <div class="item">
+      <span>Numero Cuantico secundario</span>
+      <p class="value" id="nc-secundario">--</p>
+    </div>
+    <div class="item">
+      <span>Numero Cuantico magnetico</span>
+      <p class="value" id="nc-magnetico">--</p>
+    </div>
+    <div class="item">
+      <span>Numero Cuantico espin</span>
+      <p class="value" id="nc-espin">--</p>
+    </div>
+    <div class="item">
+      <span>Nombre del elemento</span>
+      <p class="value" id="element-name">--</p>
+    </div>
+    <div class="item">
+      <span>Simbolo del elemento</span>
+      <p class="value" id="element-simbolo">--</p>
+    </div>
+  </div>
+
+  <script src="./serrucho.js"></script>
+  <script src="./NumerosCuanticos.js"></script>
+  <script src="./Elemento.js"></script>
+  <script src="./index.js"></script>
+</body>
+</html>

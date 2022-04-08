@@ -1,0 +1,69 @@
+body {
+  background: #000;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+}
+
+.input {
+  width: 100%;
+  height: 10%;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+}
+
+.input span {
+  font-size: 30px;
+  text-align: center;
+  color: #fff;
+}
+
+.input input {
+  font-size: 20px;
+  border: none;
+  background: #444;
+  color: #fff;
+  padding: 3;
+  transition: .2s;
+}
+
+.input input:focus {
+  border: none;
+  padding: 6px;
+}
+
+.input button {
+  border: none;
+  color: #000;
+  background: #fff;
+  cursor: pointer;
+}
+
+#response {
+  background: #111;
+  border-radius: 4px;
+  color: #fff;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#serrucho-container {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.item {
+  font-size: 17px;
+}
+
+.item p {
+  margin-top: 3px;
+}
+
+.item span {
+  font-weight: bold;
+}
